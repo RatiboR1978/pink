@@ -1,0 +1,49 @@
+.social-links__social-link--twitter {
+  background-image: url(../img/icon-twitter.svg);
+}
+
+.social-links__social-link--facebook {
+  background-image: url(../img/icon-facebook.svg);
+}
+
+.social-links__social-link--youtube {
+  background-image: url(../img/icon-youtube.svg);
+}
+
+.social-links__social-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 700px) {
+      margin-right: 8px;
+  }
+}
+
+.social-links {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+  @media (min-width: 700px) {
+      width: 200px;
+      margin: auto;
+  }
+}
+
+.social-links__social-link:hover {
+  border-color: #283645;
+}
+.social-links__social-link:active {
+  opacity: 0.3;
+}
+
+.social-links__social-link:last-child {
+  margin-right: 0;
+}

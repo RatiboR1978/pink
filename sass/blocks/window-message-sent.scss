@@ -1,0 +1,76 @@
+.window-message-sent {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto 30px;
+  text-align: center;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.25);
+  @media (min-width: 700px) {
+    width: 460px;
+  }
+  @media (min-width: 1200px) {
+    width: 780px;
+  }
+}
+
+.window-message-sent__inner {
+  padding: 20px;
+  @media (min-width: 700px) {
+    padding: 30px 70px 20px;
+  }
+  @media (min-width: 1200px) {
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+}
+
+.pwindow-message-sent__title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @media (min-width: 700px) {
+    font-size: 30px;
+  }
+}
+
+.window-message-sent__content {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.8;
+  @media (min-width: 700px) {
+    font-size: 18px;
+  }
+}
+
+.window-message-sent__button-block--gray {
+  background-color: #f2f2f2;
+}
+.window-message-sent__button-block {
+  padding-top: 30px;
+}
+
+.window-message-sent__btn {
+  padding: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2aab6d;
+  border-color: #2aab6d;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 280px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.window-message-sent__btn:hover {
+  background-color: #208253;
+}
+
+.window-message-sent__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.window-message-sent__btn:disabled {
+  background: #e5e5e5;
+}

@@ -1,0 +1,245 @@
+.properties__advertising-slogan {
+  color: #283645;
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 43px;
+  @media (min-width: 700px) {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 60px;
+  }
+}
+
+.properties__text-title {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  @media (min-width: 1200px){
+    font-size: 30px;
+  }
+}
+.properties__text {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+  @media (min-width: 1200px){
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.properties__wrapper-text {
+  position: relative;
+  background: #f2f2f2;
+  padding-bottom: 284px;
+  @media (min-width: 700px){
+    padding: 0 0 45px;
+  }
+  @media (min-width: 1200px){
+    height: 440px;
+    margin-bottom: -47px;
+  }
+}
+
+.properties__triangle-top {
+  width: 100%;
+  height: auto;
+}
+
+.properties__container {
+  width: 271px;
+  margin: 0 auto 35px;
+  @media (min-width: 700px) {
+    width: 620px;
+  }
+
+  @media (min-width: 1200px){
+    width: 940px;
+  }
+}
+
+
+
+.properties__title {
+  margin-top: 33px;
+  @media (min-width: 700px) {
+    padding-top: 0;
+    width: 500px;
+    margin-left: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 225px;
+  }
+}
+
+.properties__effect {
+  @media (min-width: 1200px) {
+    background-color: #f2f2f2;
+  }
+}
+
+.properties__effect-wrapper {
+  display: none;
+  @media (min-width: 700px) {
+    display: block;
+    margin-bottom: 200px;
+    margin-top: 46px;
+
+  }
+}
+
+.properties__effect-title{
+  @media (min-width: 700px) {
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+}
+
+.properties__effect-text {
+  @media (min-width: 700px){
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 24px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+
+}
+
+.properties__part {
+
+  @media (min-width: 700px) {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    width: 230px;
+    float: left;
+    padding-left: 83px;
+    margin: 0;
+    padding-top: 250px;
+  }
+}
+
+.properties__phone {
+  margin-top: 52px;
+  position: relative;
+}
+
+.properties__phone::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -598px;
+  width: 100%;
+  height: 280px;
+  z-index: 2;
+  background:  url("../img/iphone-screen-mobile@1x.png") center 0 no-repeat;
+  @media (min-width: 700px) {
+    height: 480px;
+    left: -347px;
+    right: 0;
+    bottom: -278px;
+    background:  url("../img/iphone-screen-2-tablet@1x.png") center 0 no-repeat;
+  }
+  @media (min-width: 1200px) {
+    height: 480px;
+    left: 45px;
+    right: 0;
+    bottom: 55px;
+    background:  url("../img/iphone-screen-1-desktop@1x.png") center 0 no-repeat;
+  }
+}
+
+.properties__phone-pink {
+  margin-top: 32px;
+  position: relative;
+}
+
+.properties__phone-pink::after {
+  @media (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    height: 480px;
+    left: 90px;
+    right: 0;
+    bottom: 55px;
+    background:  url("../img/iphone-screen-2-desktop@1x.png") center 0 no-repeat;
+  }
+}
+
+.properties__phone-smiley {
+  position: relative;
+  margin-top: 34px;
+}
+
+.properties__phone-smiley::after {
+  @media (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    height: 480px;
+    left: 90px;
+    right: 0;
+    bottom: 55px;
+    background:  url("../img/iphone-screen-3-desktop@1x.png") center 0 no-repeat;
+  }
+}
+
+.properties__timer {
+  position: relative;
+  width: 262px;
+  height: 302px;
+  margin-right: 47px;
+  z-index: 20;
+  float: left;
+}
+
+.properties__timer::before {
+  content: "24";
+  position: absolute;
+  top: 64px;
+  left: 24px;
+  width: 192px;
+  height: 192px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 104.6px;
+  font-weight: 700;
+  line-height: 192px;
+  text-align: center;
+  color: #d22856;
+  border: 11px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.properties__timer-image {
+  width: 262px;
+  height: 302px;
+}
+
+.properties__effect-item {
+  padding-top: 40px;
+  @media (min-width: 1200px) {
+    padding-bottom: 115px;
+  }
+}

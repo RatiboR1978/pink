@@ -1,0 +1,116 @@
+.user-form__bg-header {
+  color: white;
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: -67px;
+  background: #283645;
+  @media (min-width: 700px) {
+    padding-bottom: 0;
+    margin-top: -111px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: -141px;
+  }
+}
+
+.user-form__bg {
+  background: #283645 url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  min-height: 238px;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: #283645 url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  h2 {
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 280px;
+    @media (min-width: 700px) {
+      padding-top: 180px;
+      max-width: 608px;
+    }
+    @media (min-width: 700px) {
+      padding-top: 180px;
+      max-width: 608px;
+    }
+    @media (min-width: 1200px) {
+      padding-top: 208px;
+      max-width: 920px;
+    }
+  }
+  @media (min-width: 700px) {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    min-height: 440px;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  @media (min-width: 700px) and (min-resolution: 144dpi), (min-width: 700px) and (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+  }
+  @media (min-width: 1200px) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    min-height: 426px;
+    background-position: 50% 30px;
+    background-size: cover;
+  }
+  @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 30px;
+  }
+}
+
+.user-form__title {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 0 20px;
+  text-align: center;
+  @media (min-width: 700px) {
+    padding: 0 100px;
+    font-size: 50px;
+    color: white;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 84px;
+  }
+}
+
+.user-form__text {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  max-width: 280px;
+  margin: 45px auto 41px;
+  line-height: 30px;
+  @media (min-width: 700px) {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 500px;
+    padding: 0 79px;
+    margin: 92px auto 53px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 761px;
+    padding: 0;
+  }
+}
+
+.user-form__fragment {
+  display: none;
+  @media (min-width: 700px) {
+    display: inline;
+  }
+}
+
+.user-form__visually-hidden {
+  display: none;
+}
+

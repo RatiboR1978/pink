@@ -1,0 +1,346 @@
+.user-photos__bg-header {
+  color: white;
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: -70px;
+  background: #283645;
+  @media (min-width: 700px) {
+    margin-top: -111px;
+    padding-bottom: 0;
+  }
+  @media (min-width: 1200px) {
+    margin-top: -111px;
+  }
+}
+
+.user-photos__title {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 0 20px;
+  text-align: center;
+  @media (min-width: 700px) {
+    font-size: 50px;
+    color: white;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 84px;
+  }
+}
+
+.user-photos__visually-hidden {
+  display: none;
+}
+
+.user-photos__piece {
+  margin: 46px auto 48px;
+  width: 242px;
+  line-height: 30px;
+  @media (min-width: 700px) {
+    width: 545px;
+    margin: 91px auto 76px;
+  }
+  @media (min-width: 1200px) {
+    width: 546px;
+  }
+}
+
+.user-photos__text-title{
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  @media (min-width: 700px) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.user-photos__bg {
+  background: #283645 url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  min-height: 240px;
+  background-position: 50% 0;
+  background-size: cover;
+  h2 {
+    padding-top: 101px;
+    margin: 0 auto;
+    width: 280px;
+    @media (min-width: 700px) {
+      width: 620px;
+      padding-top: 180px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1200px) {
+      padding-top: 205px;
+    }
+  }
+  @media (min-width: 700px) {
+    min-height: 440px;
+  }
+  @media (min-width: 1200px) {
+    min-height: 393px;
+    background-position: 0 25%;
+  }
+}
+
+.user-photos__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 280px;
+  background-color: #f2f2f2;
+  align-content: stretch;
+  margin-bottom: 20px;
+  @media (min-width: 700px) {
+    justify-content: space-between;
+    width: 300px;
+  }
+}
+
+.user-photos__item-panorama {
+  width: 100%;
+  background: none;
+  margin: 0;
+  position: relative;
+}
+
+.user-photos__item-panorama::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 120px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d22856;
+  z-index: 1;
+  @media (min-width: 700px) {
+    top: 55px;
+    right: 80px;
+  }
+  @media (min-width: 1200px) {
+
+  }
+}
+
+.user-photos__content-panorama {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 21px 16px;
+  width: 233px;
+  @media (min-width: 700px) {
+    width: 530px;
+    margin-bottom: 40px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+  @media (min-width: 1200px) {
+    width: 880px;
+  }
+}
+
+.user-photos__wrapper-panorama {
+  @media (min-width: 700px) {
+    order: 1;
+    width: 200px;
+  }
+}
+
+.user-photos__text-panorama {
+  @media (min-width: 700px) {
+    order: 3;
+  }
+}
+
+.user-photos__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 22px 17px;
+  width: 233px;
+  @media (min-width: 700px) {
+    width: 240px;
+  }
+}
+
+.user-photos__name {
+  text-decoration: none;
+  color: #283645;
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.user-photos__time {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #283645;
+}
+.user-photos__text {
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #283645;
+  margin-bottom: auto;
+  margin-top: 3px;
+  line-height: 24px;
+}
+
+.user-photos__like {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 14px;
+  width: 240px;
+  color: #d22856;
+}
+
+.user-photos__like-panorama {
+  @media (min-width: 700px) {
+    order: 2;
+    margin-top: 0;
+  }
+}
+
+.user-photos__like-text {
+  position: relative;
+  margin-left: 30px;
+  @media (min-width: 700px) {
+    margin-left: 0;
+  }
+}
+
+.user-photos__like-text-panorama {
+  position: relative;
+  margin-left: 30px;
+  @media (min-width: 700px) {
+    margin-left: 140px;
+  }
+}
+
+.user-photos__like-text-panorama::before {
+  content: " ";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background: url("../img/icon-heart.svg");
+  z-index: 10;
+  top: 2px;
+  left: -28px;
+  @media (min-width: 700px) {
+    left: 120px;
+  }
+}
+
+.user-photos__like-text::before {
+  content: " ";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background: url("../img/icon-heart.svg");
+  z-index: 10;
+  top: 2px;
+  left: -28px;
+  @media (min-width: 700px) {
+    left: 250px;
+  }
+
+}
+
+.user-photos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 700px) {
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 620px;
+  }
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
+.user-photos__panorama-wrapper {
+  width: 280px;
+  margin: 0 auto 20px;
+  background-color: #f2f2f2;
+  @media (min-width: 700px) {
+    width: 620px;
+  }
+  @media (min-width: 1200px) {
+    width: 940px;
+  }
+}
+
+.user-photos__panorama {
+  position: relative;
+  width: 100%;
+  height: 137px;
+  @media (min-width: 700px) {
+    height: 509px;
+  }
+}
+
+.user-photos__post1 {
+   @media (min-width: 700px) {
+     margin-right: 10px;
+   }
+ }
+
+.user-photos__post2 {
+  @media (min-width: 700px) {
+    margin-left: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.user-photos__post3 {
+  @media (min-width: 700px) {
+    margin-right: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+
+.user-photos__post4 {
+  @media (min-width: 700px) {
+    margin-left: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+.user-photos__post5 {
+  @media (min-width: 700px) {
+    margin-right: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 10px;
+  }
+}
+
+.user-photos__post6 {
+  @media (min-width: 700px) {
+    margin-left: 10px;
+  }
+}
+
+
