@@ -1,3 +1,10 @@
+.reviews {
+  @media (min-width: 1200px){
+    padding-top: 185px;
+    padding-bottom: 55px;
+  }
+}
+
 .reviews__title {
   font-family: "opensans", "Arial", sans-serif;
   font-size: 18px;
@@ -46,6 +53,8 @@
   }
   @media (min-width: 1200px) {
     font-size: 18px;
+    bottom: -30px;
+    left: 223px;
   }
 }
 

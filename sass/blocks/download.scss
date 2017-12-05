@@ -7,6 +7,7 @@
   padding-bottom: 15px;
   background: #283645;
   @media (min-width: 700px) {
+    margin-top: -111px;
     padding-bottom: 0;
   }
 }
@@ -109,6 +110,8 @@
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  transition-property: background;
+  transition-duration: 1s;
   @media (min-width: 1200px){
     margin-top: 50px;
   }

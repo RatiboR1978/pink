@@ -33,7 +33,6 @@
   @media (min-width: 1200px) {
     width: 940px;
     margin: 0 auto;
-    padding-top: 18px;
   }
 }
 
@@ -56,6 +55,13 @@
   }
 
 }
+
+.page-header__logo-pink .logo-white__text,
+.page-header__logo-pink .logo-white__glasses {
+  transition-property: fill;
+  transition-duration: 1s;
+}
+
 
 .page-header__logo-pink:hover .logo-white__text,
 .page-header__logo-pink:hover .logo-white__glasses {
@@ -243,6 +249,8 @@
     text-decoration: none;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #010101;
+    transition-property: color;
+    transition-duration: 1s;
 
     @media (min-width: 1200px) {
       padding: 0;
@@ -269,11 +277,12 @@
 .main-nav {
   @media (min-width: 1200px) {
     background: rgba(0, 0, 0, 0.3);
-    height: 110px;
+    height: 66px;
   }
 }
 
 .main-nav__item--active {
+  cursor: pointer;
   @media (min-width: 1200px) {
     position: relative;
   }
