@@ -787,6 +787,20 @@
 
 .price {
   background: #f2f2f2; }
+  @media (min-width: 700px) {
+    .price {
+      padding-bottom: 60px; } }
+  @media (min-width: 1200px) {
+    .price {
+      padding-bottom: 95px; } }
+
+@media (min-width: 700px) {
+  #item-title {
+    margin-top: 160px; } }
+
+@media (min-width: 1200px) {
+  #item-title {
+    margin-top: 0; } }
 
 .price__visually-hidden {
   display: none; }
@@ -1042,6 +1056,16 @@
     .contacts__item-text {
       font-size: 24px; } }
 
+#contacts__item1 {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto; }
+
+#contacts__item2 {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto; }
+
 .contacts__container {
   width: 280px;
   margin: 0 auto; }
@@ -1054,13 +1078,9 @@
 
 .contacts__map {
   width: 100%;
-  height: 200px;
-  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
-  background-size: cover; }
+  height: 200px; }
   @media (min-width: 700px) {
     .contacts__map {
-      background: url("../../img/bg-map-tablet@1x.jpg") no-repeat;
-      background-size: cover;
       height: 380px; } }
 
 .contacts__triangle-white-footer {
@@ -1070,7 +1090,8 @@
 .contacts__triangle-white-footer img {
   width: 100%;
   position: absolute;
-  top: -1px; }
+  top: -1px;
+  z-index: 9; }
 
 .contacts__footer-page {
   display: none; }
@@ -1114,7 +1135,9 @@
 
 .contacts__logo {
   display: block;
-  margin: 40px auto 34px; }
+  margin: 40px auto 34px;
+  transition-property: fill;
+  transition-duration: 1s; }
   @media (min-width: 700px) {
     .contacts__logo {
       margin: -14px 0 0; } }
@@ -1136,7 +1159,9 @@
   margin-left: 12px; }
 
 .contacts__copyright-logo {
-  fill: #d22856; }
+  fill: #d22856;
+  transition-property: fill;
+  transition-duration: 1s; }
 
 .contacts__link:hover .footer-page__copyright-logo {
   fill: #283645; }
@@ -1146,7 +1171,9 @@
 
 .contacts__logo-blue--tablet {
   width: 146.3px;
-  height: 40.375px; }
+  height: 40.375px;
+  transition-property: fill;
+  transition-duration: 1s; }
   @media (min-width: 1200px) {
     .contacts__logo-blue--tablet {
       display: none; } }
@@ -1154,7 +1181,9 @@
 .contacts__logo-blue--desktop {
   display: none;
   width: 146.3px;
-  height: 40.375px; }
+  height: 40.375px;
+  transition-property: fill;
+  transition-duration: 1s; }
   @media (min-width: 1200px) {
     .contacts__logo-blue--desktop {
       display: inline; } }
@@ -2988,7 +3017,9 @@ textarea {
   border: 3px solid #e9ebec;
   border-radius: 50%;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  transition-property: border-color;
+  transition-duration: 1s; }
   @media (min-width: 700px) {
     .social-links__social-link {
       margin-right: 8px; } }

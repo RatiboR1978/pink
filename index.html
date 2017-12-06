@@ -291,20 +291,20 @@
         <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__item item-phone">
             <h3 class="contacts__item-title">Звоните:</h3>
-            <p class="contacts__item-text">+7 (812) 555-66-66</p>
+            <a href="tel:+78125556666" class="contacts__item-text" id="contacts__item1">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__item item-email">
             <h3 class="contacts__item-title">Пишите:</h3>
-            <p class="contacts__item-text">mail@htmlacademy.ru</p>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__item-text" id="contacts__item2">mail@htmlacademy.ru</a>
           </div>
 
           <div class="contacts__item item-address">
-            <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+            <h3 class="contacts__item-title" id="item-title">Приезжайте в гости:</h3>
             <p class="contacts__item-text">ул. Большая Конюшенная, 19/8</p>
           </div>
       </div>
       <div class="contacts__triangle-white-footer"><img src="img/bg-triangle-white-footer.svg" alt=""></div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
       <div class="contacts__container">
         <div class="contacts__footer-page">
           <a class="contacts__logo" href="index.html">
@@ -342,9 +342,9 @@
         </svg>
           </a>
           <section class="social-links">
-            <a class="social-links__social-link social-links__social-link--twitter" href="#"></a>
-            <a class="social-links__social-link social-links__social-link--facebook" href="#"></a>
-            <a class="social-links__social-link social-links__social-link--youtube" href="#"></a>
+            <a class="social-links__social-link social-links__social-link--twitter" href="https://twitter.com/"></a>
+            <a class="social-links__social-link social-links__social-link--facebook" href="https://www.facebook.com/"></a>
+            <a class="social-links__social-link social-links__social-link--youtube" href="https://www.youtube.com"></a>
           </section>
           <div class="contacts__footer-copyright">
             <p class="contacts__text">Разработано
@@ -358,6 +358,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

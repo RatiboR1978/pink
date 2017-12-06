@@ -34,6 +34,18 @@
   }
 }
 
+#contacts__item1 {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#contacts__item2 {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+}
+
 .contacts__container {
   width: 280px;
   margin: 0 auto;
@@ -48,11 +60,7 @@
 .contacts__map {
   width: 100%;
   height: 200px;
-  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
-  background-size: cover;
   @media (min-width: 700px) {
-    background: url("../../img/bg-map-tablet@1x.jpg") no-repeat;
-    background-size: cover;
     height: 380px;
   }
 }
@@ -66,6 +74,7 @@
   width: 100%;
   position: absolute;
   top: -1px;
+  z-index: 9;
 }
 
 .contacts__footer-page {
@@ -119,6 +128,8 @@
 .contacts__logo {
   display: block;
   margin: 40px auto 34px;
+  transition-property: fill;
+  transition-duration: 1s;
   @media (min-width: 700px){
     margin: -14px 0 0;
   }
@@ -146,6 +157,8 @@
 
 .contacts__copyright-logo {
   fill: #d22856;
+  transition-property: fill;
+  transition-duration: 1s;
 }
 
 .contacts__link:hover .footer-page__copyright-logo {
@@ -158,6 +171,8 @@
 .contacts__logo-blue--tablet {
   width: 146.3px;
   height: 40.375px;
+  transition-property: fill;
+  transition-duration: 1s;
   @media(min-width: 1200px) {
     display: none;
   }
@@ -167,6 +182,8 @@
   display: none;
   width: 146.3px;
   height: 40.375px;
+  transition-property: fill;
+  transition-duration: 1s;
   @media(min-width: 1200px) {
     display: inline;
   }
