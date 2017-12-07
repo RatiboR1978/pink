@@ -631,7 +631,7 @@
 @media (min-width: 1200px) {
   .reviews {
     padding-top: 185px;
-    padding-bottom: 55px; } }
+    padding-bottom: 225px; } }
 
 .reviews__title {
   font-family: "opensans", "Arial", sans-serif;
@@ -780,10 +780,32 @@
 .reviews__control-left:active {
   opacity: 0.1; }
 
-@media (min-width: 1200px) {
-  .reviews__item {
-    width: 700px;
-    margin: 0 auto; } }
+.reviews__item {
+  opacity: 0;
+  display: none; }
+  @media (min-width: 1200px) {
+    .reviews__item {
+      width: 700px;
+      position: absolute;
+      top: -39px;
+      left: 152px; } }
+
+.reviews__wrap {
+  position: relative; }
+
+.reviews__item--active {
+  display: block;
+  opacity: 1; }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .price {
   background: #f2f2f2; }

@@ -1,7 +1,7 @@
 .reviews {
   @media (min-width: 1200px){
     padding-top: 185px;
-    padding-bottom: 55px;
+    padding-bottom: 225px;
   }
 }
 
@@ -176,13 +176,33 @@
   opacity: 0.1;
 }
 
-
-
 .reviews__item {
+  opacity: 0;
+  display: none;
   @media (min-width: 1200px) {
     width: 700px;
-    margin: 0 auto;
+    position: absolute;
+    top: -39px;
+    left: 152px;
   }
 }
 
+.reviews__wrap {
+  position: relative;
+}
+
+.reviews__item--active {
+  display: block;
+  opacity: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from{opacity: 0}
+  to{opacity: 1}
+}
 
