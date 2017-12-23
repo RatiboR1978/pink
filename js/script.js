@@ -105,6 +105,7 @@ if (window.location.pathname === '/index.html') {
 
     reviewsItem[i].classList.add('reviews__item--active');
   });
+  ymaps.ready(init);
 }
 
 
@@ -128,7 +129,6 @@ navToggle.addEventListener('click', function() {
   }
 });*/
 
-ymaps.ready(init);
 var myMap;
 
 function init(){
