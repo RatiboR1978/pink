@@ -61,17 +61,18 @@ $(document).ready(function(){
 
 });
 
-var imgEditor = document.querySelector('#img'),
-   saturation = document.querySelector('#saturation'),
+if (window.location.pathname === '/photo.html') {
+  var imgEditor = document.querySelector('#img'),
+    saturation = document.querySelector('#saturation'),
     contrast = document.querySelector('#contrast');
-contrast.addEventListener('change', function () {
-  imgEditor.style.filter = `grayscale(${Math.abs(this.value - 100)}%)`;
-});
+  contrast.addEventListener('change', function () {
+    imgEditor.style.filter = `grayscale(${Math.abs(this.value - 100)}%)`;
+  });
 
-saturation.addEventListener('change', function () {
-  imgEditor.style.filter = `saturate(${Math.abs(this.value - 200)}%)`;
-});
-
+  saturation.addEventListener('change', function () {
+    imgEditor.style.filter = `saturate(${Math.abs(this.value - 200)}%)`;
+  });
+}
 
 var reviewsItem = document.querySelectorAll('.reviews__item'),
     next = document.querySelector('.reviews__control-right'),
