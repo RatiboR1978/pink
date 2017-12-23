@@ -8,8 +8,20 @@
 </head>
 <body>
 <header class="page-header height-header">
-  <nav class="main-nav  main-nav--opened">
+  <nav class="main-nav  main-nav--closed">
     <div class="main-nav__wrapper">
+      <ul class="main-nav__user-items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+      </ul>
+      <ul class="main-nav__user-items-desktop">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+      </ul>
       <div class="page-header__logo">
         <a href="#">
           <svg class="page-header__logo-pink page-header__logo-pink--mobile" width="74.426" height="22.859" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -52,14 +64,10 @@
           </g>
               </svg>
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__toggle menu_btn">
+          <div class="menu_line"></div>
+        </div>
       </div>
-      <ul class="main-nav__user-items">
-        <li class="main-nav__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
-      </ul>
     </div>
   </nav>
 </header>
@@ -187,6 +195,7 @@
           </g>
         </svg>
     </a>
+    <img src="img/bt-up.png" alt="" class="bt-up" style="">
     <section class="social-links">
       <a class="social-links__social-link social-links__social-link--twitter" href="#"></a>
       <a class="social-links__social-link social-links__social-link--facebook" href="#"></a>
@@ -232,6 +241,7 @@
     <button class="window-message-sent__btn" type="button">Закрыть окно</button>
   </div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

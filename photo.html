@@ -8,8 +8,20 @@
 </head>
 <body>
 <header class="page-header height-header">
-  <nav class="main-nav  main-nav--opened">
+  <nav class="main-nav  main-nav--closed">
     <div class="main-nav__wrapper">
+      <ul class="main-nav__user-items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+      </ul>
+      <ul class="main-nav__user-items-desktop">
+        <<li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+      </ul>
       <div class="page-header__logo">
         <a href="#">
           <svg class="page-header__logo-pink page-header__logo-pink--mobile" width="74.426" height="22.859" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -52,14 +64,10 @@
           </g>
               </svg>
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__toggle menu_btn">
+          <div class="menu_line"></div>
+        </div>
       </div>
-      <ul class="main-nav__user-items">
-        <li class="main-nav__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
-      </ul>
     </div>
   </nav>
 </header>
@@ -207,7 +215,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
           <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-          <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="photo-8">
+          <img id="img" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="photo-8">
         </picture>
         <input type="radio" id="btn-7" name="toggle" checked>
         <input type="radio" id="btn-8" name="toggle">
@@ -238,10 +246,10 @@
             <input class="photo-editor__range" type="range" min="0" max="100" step="1" value="50">
           </div>
           <div class="photo-editor__controls-pruning" id="slide2">
-            <input class="photo-editor__range" type="range" min="0" max="100" step="1" value="30">
+            <input class="photo-editor__range" id="saturation" type="range" min="0" max="100" step="1" value="30">
           </div>
           <div class="photo-editor__controls-contrast" id="slide3">
-            <input class="photo-editor__range" type="range" min="0" max="100" step="1" value="80">
+            <input class="photo-editor__range" id="contrast" type="range" min="0" max="100" step="1" value="80">
           </div>
           <div class="photo-editor__btn">
             <button class="photo-editor__btn-post  photo-editor__btn--active">Запостить</button>
@@ -288,6 +296,7 @@
           </g>
         </svg>
     </a>
+    <img src="img/bt-up.png" alt="" class="bt-up" style="">
     <section class="social-links">
       <a class="social-links__social-link social-links__social-link--twitter" href="#"></a>
       <a class="social-links__social-link social-links__social-link--facebook" href="#"></a>
@@ -304,6 +313,7 @@
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

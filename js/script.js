@@ -1,3 +1,78 @@
+$(document).ready(function(){
+
+  /*Button - Up
+   ========================*/
+
+  $(window).scroll(function() {
+
+    if($(this).scrollTop() === 0) {
+      $('.bt-up').fadeOut();
+    } else {
+      $('.bt-up').fadeIn();
+    }
+  });
+
+  $('.bt-up').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+  });
+
+  /* Фиксация меню
+   =========================*/
+  var headerH;
+  if (window.location.pathname === '/index.html') {
+    headerH = $('.download').height();
+  } else if (window.location.pathname === '/photo.html') {
+    headerH = $('.user-photos__bg-header').height();
+  } else {
+    headerH = $('.user-form__bg').height();
+  }
+
+    var navH = $('.main-nav').innerHeight();
+  $(document).on('scroll', function () {
+    //alert(window.location.pathname);
+    var documentScroll = $(this).scrollTop();
+    if (documentScroll > headerH) {
+      $('.main-nav').addClass('page-header__wrap-fixed');
+      $('.download').css('paddingTop', navH);
+    } else {
+      $('.main-nav').removeClass('page-header__wrap-fixed');
+      $('.download').removeAttr('style');
+    }
+  });
+
+  var width = $(window).width(),
+      menu = $('.main-nav__user-items');
+    $(function() {
+      var pull = $('.main-nav__toggle'),
+        menuHeight = menu.height();
+      $(pull).on('click', function(e) {
+        menu.slideToggle();
+      });
+    });
+
+
+  /* Гамбургер
+   =========================*/
+  $(".menu_btn").click(function() {
+    $(".menu_btn").toggleClass("menu_btn_active");
+  });
+
+
+
+});
+
+var imgEditor = document.querySelector('#img'),
+   saturation = document.querySelector('#saturation');
+    contrast = document.querySelector('#contrast');
+contrast.addEventListener('change', function () {
+  imgEditor.style.filter = `grayscale(${Math.abs(this.value - 100)}%)`;
+});
+
+saturation.addEventListener('change', function () {
+  imgEditor.style.filter = `saturate(${Math.abs(this.value - 200)}%)`;
+});
+
+
 var reviewsItem = document.querySelectorAll('.reviews__item'),
     next = document.querySelector('.reviews__control-right'),
     i = 0,
@@ -34,7 +109,7 @@ prev.addEventListener('click', function (e) {
 /**
  * Created by Mama on 22.09.2016.
  */
-var navMain = document.querySelector('.main-nav');
+/*var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
@@ -47,8 +122,7 @@ navToggle.addEventListener('click', function() {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
   }
-});
-
+});*/
 
 ymaps.ready(init);
 var myMap;

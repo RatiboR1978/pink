@@ -119,22 +119,6 @@
 
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  @media (max-width: 1200px) {
-    background: url("../img/icon-menu-burger.svg") no-repeat;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 24px;
-  }
-}
-
-.main-nav--closed .main-nav__toggle:hover::before {
-  background: url("../img/icon-menu-burger-pink.svg") no-repeat;
-}
-
 .main-nav--closed .main-nav__toggle:active::before {
   opacity: 0.3;
 }
@@ -204,9 +188,23 @@
   padding: 0;
   list-style: none;
   @media (min-width: 1200px){
+    display: none;
+  }
+}
+
+.main-nav__user-items-desktop {
+  display: none;
+  margin: 0;
+  li {
+    list-style-type: none;
+  }
+  @media (min-width: 1200px) {
+    display: block;
     float: right;
   }
 }
+
+
 
 .main-nav--closed {
   @media (max-width: 1200px) {
@@ -281,6 +279,12 @@
   }
 }
 
+.main-nav__item {
+  @media (max-width: 1200px) {
+    background-color: rgba(29, 40, 51, 1);
+  }
+}
+
 .main-nav__item--active {
   cursor: pointer;
   @media (min-width: 1200px) {
@@ -307,3 +311,74 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.page-header__wrap-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(29, 40, 51, 1);
+}
+
+.menu_btn {
+  height: 26px;
+  width: 30px;
+  border-radius: 3px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu_btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+}
+
+.menu_btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+}
+
+.menu_line {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+  margin-top: 11px;
+}
+
+
+
+.menu_btn_active .menu_line {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.menu_btn_active:after {
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+  left: 3px;
+}
+
+.menu_btn_active:before {
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  left: 3px;
+}

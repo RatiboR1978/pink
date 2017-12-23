@@ -9,8 +9,20 @@
   <body>
     <header class="page-header">
         <h1 class="visually-hidden">Pink - Устали от серости мегаполиса? Нам есть, что вам предложить!</h1>
-      <nav class="main-nav  main-nav--opened">
+      <nav class="main-nav  main-nav--closed">
         <div class="main-nav__wrapper">
+          <ul class="main-nav__user-items">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+          </ul>
+          <ul class="main-nav__user-items-desktop">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
+          </ul>
           <div class="page-header__logo">
             <a href="#">
               <svg class="page-header__logo-pink page-header__logo-pink--mobile" width="74.426" height="22.859" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -53,14 +65,11 @@
           </g>
               </svg>
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__toggle menu_btn">
+              <div class="menu_line"></div>
+            </div>
+           <!-- <button class="main-nav__toggle" type="button">Открыть меню</button>-->
           </div>
-          <ul class="main-nav__user-items">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru">HMTL Academy</a></li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -172,6 +181,7 @@
           <label for="btn-13"></label>
         </div>
       </div>
+      <img src="img/bt-up.png" alt="" class="bt-up" style="">
     </section>
     <section class="price">
       <div class="price__background"><svg class="price__triangle-top" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
@@ -370,6 +380,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
     <script src="js/script.js"></script>

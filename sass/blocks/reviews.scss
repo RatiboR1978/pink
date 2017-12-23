@@ -206,3 +206,17 @@
   to{opacity: 1}
 }
 
+.bt-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: .3;
+  z-index: 999;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.bt-up:hover {
+  opacity: 1;
+}
