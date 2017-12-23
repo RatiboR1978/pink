@@ -62,7 +62,7 @@ $(document).ready(function(){
 });
 
 var imgEditor = document.querySelector('#img'),
-   saturation = document.querySelector('#saturation');
+   saturation = document.querySelector('#saturation'),
     contrast = document.querySelector('#contrast');
 contrast.addEventListener('change', function () {
   imgEditor.style.filter = `grayscale(${Math.abs(this.value - 100)}%)`;
