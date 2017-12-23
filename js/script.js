@@ -74,36 +74,39 @@ if (window.location.pathname === '/photo.html') {
   });
 }
 
-var reviewsItem = document.querySelectorAll('.reviews__item'),
+if (window.location.pathname === '/index.html') {
+  var reviewsItem = document.querySelectorAll('.reviews__item'),
     next = document.querySelector('.reviews__control-right'),
     i = 0,
     prev = document.querySelector('.reviews__control-left');
 
-next.addEventListener('click', function (e) {
-  e.preventDefault();
-  i++;
-  Array.from(reviewsItem).forEach(function (item) {
-    item.classList.remove('reviews__item--active');
+  next.addEventListener('click', function (e) {
+    e.preventDefault();
+    i++;
+    Array.from(reviewsItem).forEach(function (item) {
+      item.classList.remove('reviews__item--active');
+    });
+    if (i === reviewsItem.length) {
+      i = 0;
+    }
+
+    reviewsItem[i].classList.add('reviews__item--active');
   });
-  if (i === reviewsItem.length) {
-    i = 0;
-  }
 
-  reviewsItem[i].classList.add('reviews__item--active');
-});
+  prev.addEventListener('click', function (e) {
+    e.preventDefault();
+    i--;
+    Array.from(reviewsItem).forEach(function (item) {
+      item.classList.remove('reviews__item--active');
+    });
+    if (i < 0) {
+      i = reviewsItem.length - 1;
+    }
 
-prev.addEventListener('click', function (e) {
-  e.preventDefault();
-  i--;
-  Array.from(reviewsItem).forEach(function (item) {
-    item.classList.remove('reviews__item--active');
+    reviewsItem[i].classList.add('reviews__item--active');
   });
-  if (i < 0) {
-    i = reviewsItem.length - 1;
-  }
+}
 
-  reviewsItem[i].classList.add('reviews__item--active');
-});
 
 
 
