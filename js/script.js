@@ -66,11 +66,11 @@ if (window.location.pathname === '/photo.html') {
     saturation = document.querySelector('#saturation'),
     contrast = document.querySelector('#contrast');
   contrast.addEventListener('change', function () {
-    imgEditor.style.filter = `grayscale(${Math.abs(this.value - 100)}%)`;
+    imgEditor.style.filter = 'grayscale(' + Math.abs(this.value - 100) + '%)';
   });
 
   saturation.addEventListener('change', function () {
-    imgEditor.style.filter = `saturate(${Math.abs(this.value - 200)}%)`;
+    imgEditor.style.filter = 'saturate(' + Math.abs(this.value - 200) + '%)';
   });
 }
 
@@ -105,29 +105,10 @@ if (window.location.pathname === '/index.html') {
 
     reviewsItem[i].classList.add('reviews__item--active');
   });
-  ymaps.ready(init);
+
 }
+ymaps.ready(init);
 
-
-
-
-/**
- * Created by Mama on 22.09.2016.
- */
-/*var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
-
-navMain.classList.remove('main-nav--nojs');
-
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});*/
 
 var myMap;
 
