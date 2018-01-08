@@ -18,16 +18,8 @@ $(document).ready(function(){
 
   /* Фиксация меню
    =========================*/
-  var headerH;
-  if (window.location.pathname === '/index.html') {
-    headerH = $('.download').height();
-  } else if (window.location.pathname === '/photo.html') {
-    headerH = $('.user-photos__bg-header').height();
-  } else {
-    headerH = $('.user-form__bg').height();
-  }
-
-    var navH = $('.main-nav').innerHeight();
+  var headerH = 0;
+  var navH = $('.main-nav').innerHeight();
   $(document).on('scroll', function () {
     //alert(window.location.pathname);
     var documentScroll = $(this).scrollTop();
@@ -57,7 +49,23 @@ $(document).ready(function(){
     $(".menu_btn").toggleClass("menu_btn_active");
   });
 
+  /* Лайки
+   =========================*/
+  $("#heart, .user-photos__heart").click(function() {
+    if ($(this).attr("src") === "img/icon-heart.svg") {
+      $(this).attr("src", "img/icon-heart2.svg");
+      var num = $(this).prev(".user-photos__like-text, .user-photos__like-text-panorama").children('span').text()*1;
+      num++;
+      $(this).prev(".user-photos__like-text, .user-photos__like-text-panorama").children('span').text(num);
 
+    } else {
+      $(this).attr("src", "img/icon-heart.svg");
+      var num = $(this).prev(".user-photos__like-text, .user-photos__like-text-panorama").children('span').text()*1;
+      num--;
+      $(this).prev(".user-photos__like-text, .user-photos__like-text-panorama").children('span').text(num);
+    }
+
+  });
 
 });
 
@@ -75,6 +83,7 @@ if (window.location.pathname === '/photo.html') {
 }
 
 if (window.location.pathname === '/index.html') {
+  ymaps.ready(init);
   var reviewsItem = document.querySelectorAll('.reviews__item'),
     next = document.querySelector('.reviews__control-right'),
     i = 0,
@@ -107,7 +116,7 @@ if (window.location.pathname === '/index.html') {
   });
 
 }
-ymaps.ready(init);
+
 
 
 var myMap;
