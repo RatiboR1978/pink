@@ -117,7 +117,7 @@ if (window.location.pathname === '/index.html') {
 
 }
 
-
+ymaps.ready(init);
 
 var myMap;
 
