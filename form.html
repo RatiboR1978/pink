@@ -84,15 +84,15 @@
     <form class="user-data" method="post">
       <div class="user-data__information-user">
         <label class="user-data__surname" for="surname">
-          <span class="user-data__title">Фамилия:</span>
+          <span class="user-data__title">*Фамилия:</span>
           <input id="surname" type="text" placeholder="Укажите фамилию" name="surname" required>
         </label>
         <label class="user-data__name" for="name">
-          <span class="user-data__title">Имя:</span>
+          <span class="user-data__title">*Имя:</span>
           <input id="name" type="text" placeholder="Введите ваше имя" name="name" required>
         </label>
         <label class="user-data__middle-name" for="middle-name">
-          <span class="user-data__title">Отчество:</span>
+          <span class="user-data__title">*Отчество:</span>
           <input id="middle-name" type="text" placeholder="Ну и отчество тоже" name="middle-name" required>
         </label>
       </div>
@@ -121,16 +121,16 @@
           <div class="user-data__contact-wrapper">
             <div class="user-data__phone-wrapper">
               <label class="user-data__phone" for="phone">
-                <span class="user-data__numbered">Номерок телефончика</span>
+                <span class="user-data__numbered">*Номерок телефончика</span>
                 <input id="phone" type="text" placeholder="Номер, пожалуйста" name="phone" required>
-                <span class="user-data__number">Номер телефона</span>
+                <span class="user-data__number">*Номер телефона</span>
               </label>
             </div>
             <div class="user-data__email-wrapper">
               <label class="user-data__email" for="email">
-                <span class="user-data__the-address">Адресок почты</span>
+                <span class="user-data__the-address">*Адресок почты</span>
                 <input id="email" type="text" placeholder="Введите почту" name="email" required>
-                <span class="user-data__address">Адрес почты</span>
+                <span class="user-data__address">*Адрес почты</span>
               </label>
             </div>
           </div>
@@ -211,6 +211,7 @@
       </p>
     </div>
   </div>
+  <div class="overlay"></div>
 </footer>
 <section class="window-message" id="failure">
   <div class="window-message__inner">

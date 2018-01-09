@@ -64,9 +64,25 @@ $(document).ready(function(){
       num--;
       $(this).prev(".user-photos__like-text, .user-photos__like-text-panorama").children('span').text(num);
     }
-
   });
 
+  /* Модальные окна
+   =========================*/
+  $('.user-data__send').click(function(e){
+    if ($('#surname').val() && $('#name').val() && $('#middle-name').val() && $('#phone').val() && $('#email').val()) {
+      e.preventDefault();
+      $('#success, .overlay').fadeIn(500);
+      $('.window-message-sent__btn').click(function () {
+        $('#success, .overlay').fadeOut(500);
+      })
+    } else {
+      e.preventDefault();
+      $('#failure, .overlay').fadeIn(500);
+      $('.window-message__btn').click(function () {
+        $('#failure, .overlay').fadeOut(500);
+      })
+    }
+  });
 });
 
 if (window.location.pathname === '/photo.html') {
