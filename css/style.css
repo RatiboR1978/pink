@@ -1461,7 +1461,9 @@
   margin: 15px 0 25px;
   padding: 18px 3px 18px 20px;
   width: 255px;
-  outline: none; }
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 1s;}
   @media (min-width: 700px) {
     #name,
     #surname,
@@ -1660,7 +1662,9 @@
   margin: 0 0 30px;
   padding-left: 70px;
   padding-top: 10px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  transition-property: border-color;
+  transition-duration: 1s;}
   @media (min-width: 700px) {
     .user-data__app-item {
       padding-left: 120px; } }
@@ -1678,7 +1682,7 @@
   height: 35px;
   border-radius: 50%;
   border: 2px solid #e9ebec;
-  background-color: #fff; }
+  background-color: #fff;  }
   @media (min-width: 700px) {
     .user-data__app-item::before {
       margin-left: 62px; } }
@@ -1730,7 +1734,9 @@
   text-align: center;
   width: 275px;
   resize: none;
-  outline: none; }
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 1s; }
   @media (min-width: 700px) {
     .user-data__description-text {
       height: 165px;
@@ -1844,7 +1850,9 @@
 #email {
   margin: 15px 0 25px;
   padding: 19px 3px 19px 20px;
-  outline: none; }
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 1s;}
   @media (min-width: 700px) {
     #phone,
     #email {
